@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+int c;
+bool f=true;
+bool e;
+bool m=true;
+int n;
+int d;
+int g;
+int j;
+int k;
+int l;
+int z;
+int y;
+int x;
+int w;
+
+int main() {
+
+    cin>>c;
+    
+    cout<<"You entered "<<c<<"."<<endl;   
+   
+     for(d=2; (d<c); ++d) {      
+       if(c % d == 0){
+       ++z;
+       y=(c / d);
+     if(d<=y) { cout<<d<<", "<<y<<endl;}
+    // if(d==y){--z;}
+   if(z>0)  { f = false;}
+       }    
+    }
+    
+    
+    
+if(f==false){
+cout<<"These "<<z<<" numbers will devide into your number evenly."<<endl;
+}
+
+
+
+if(f){
+       cout<<c<<" is a prime number."<<endl;
+       cout<<"These are the prime numbers that come before it:"<<endl;       
+ for(l=--c; (l>0); --l, (m = true)){ 
+for(j=2; (j<l); ++j) { 
+ if(l % j == 0) { 
+     ++k;
+  if(k > 0){m = false;}  
+  }
+  }
+ if (m){
+cout<<l<<endl;
+n++;
+ }
+   }
+   cout<<"There are "<<n<<" prime numbers before "<<++c<<"."<<endl;
+//   cout<<" This makes "<<c<<" the "<<++n<<"th prime number."<<endl;
+}
+
+
+
+}
